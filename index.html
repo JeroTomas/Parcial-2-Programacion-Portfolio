@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#presentacion">Inicio</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contactos">Contacto</a></li>
+        </ul>
+        <a href="assets/cv.pdf" download="CV_Jero_Tomas.pdf" class="boton-descargar">Descargar CV</a>
+    </nav>
+
+    <!-- Sección de Presentación -->
+    <section id="presentacion" class="seccion">
+        <div class="contenedor-presentacion">
+            <div class="perfil">
+                <div class="foto-perfil"></div>
+                <div class="iconos-lenguajes">
+                    <i class="fab fa-python"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                    <i class="fas fa-database"></i>
+                </div>
+            </div>
+            <div class="texto-presentacion">
+                <p>Hola! Soy Jerónimo Tomás Zuñiga y soy un programador principiante que quiere comenzar a adentrarse a este "mundo".</p>
+                <p>Actualmente soy estudiante de la tecnicatura en programación de la UTN-FRM, y estoy dispuesto a comenzar a trabajar con una empresa o algún proyecto menor. Mis virtudes son buen trabajo en equipo, constancia, buena improvisación y solución de problemas, y autocrítica.</p>
+                <br>
+                <p>Los lenguajes que domino son: Python, HTML, CSS, JavaScript, SQL y NOSQL.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="seccion">
+        <h2>Proyectos</h2>
+        <div class="contenedor-proyectos">
+            <div class="proyecto">
+                <div class="imagen-proyecto"></div>
+                <h3>Proyecto 1</h3>
+                <p>Descripción del Proyecto 1.</p>
+                <a href="enlace-al-repositorio-1" target="_blank" class="enlace-github">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="proyecto">
+                <div class="imagen-proyecto"></div>
+                <h3>Proyecto 2</h3>
+                <p>Descripción del Proyecto 2.</p>
+                <a href="enlace-al-repositorio-2" target="_blank" class="enlace-github">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="proyecto">
+                <div class="imagen-proyecto"></div>
+                <h3>Proyecto 3</h3>
+                <p>Descripción del Proyecto 3.</p>
+                <a href="enlace-al-repositorio-3" target="_blank" class="enlace-github">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contactos" class="seccion">
+        <h2>Contacto</h2>
+        <form class="formulario-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ej: Juan Cespedes">
+
+            <label for="numero">Número:</label>
+            <input type="tel" id="numero" placeholder="Ej: +54 92610987654">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Ej: juancesp@gmail.com" required>
+
+            <label for="mensaje">Deja tu mensaje:</label>
+            <textarea id="mensaje" placeholder="Comentario..." required></textarea>
+
+            <button type="submit">ENVIAR</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© Jero Tomás 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
