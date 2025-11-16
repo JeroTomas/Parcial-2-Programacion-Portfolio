@@ -1,0 +1,259 @@
+/* Estilos globales */
+body {
+    font-family: 'League Gothic', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffd699;
+}
+
+/* Barra de navegación */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #004aad;
+    padding: 10px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    font-family: 'League Gothic', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.boton-descargar {
+    background-color: #5ce1e6;
+    color: #004aad;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: 'League Gothic', Arial, sans-serif;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+/* Secciones */
+.seccion {
+    padding: 100px 20px 20px;
+    background-color: #ffd699;
+    min-height: 100vh;
+}
+
+/* Sección de Presentación */
+#presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-presentacion {
+    display: flex;
+    max-width: 90%;
+    width: 90%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.texto-presentacion {
+    width: 100%;
+    text-align: center;
+}
+
+.texto-presentacion p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.iconos-lenguajes {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.iconos-lenguajes i {
+    font-size: 40px;
+    margin: 0 10px;
+    color: #004aad;
+}
+
+#proyectos h2, #contactos h2 {
+    text-align: center;
+    font-family: 'League Gothic', Arial, sans-serif;
+}
+
+/* Sección de Proyectos */
+#proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-proyectos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.proyecto {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-proyecto {
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+
+.enlace-github {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.enlace-github i {
+    font-size: 40px;
+    color: #004aad;
+}
+
+/* Sección de Contacto */
+#contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-contacto {
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto label {
+    display: block;
+    margin-top: 20px;
+    color: #004aad;
+    font-family: 'League Gothic', Arial, sans-serif;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #004aad;
+}
+
+.formulario-contacto button {
+    background-color: white;
+    color: #004aad;
+    padding: 10px 20px;
+    border: 2px solid #004aad;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'League Gothic', Arial, sans-serif;
+}
+
+.formulario-contacto button:hover {
+    background-color: #ccc;
+}
+
+/* Pie de página */
+footer {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'League Gothic', Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .boton-descargar {
+        margin: 10px 0;
+    }
+
+    .contenedor-presentacion {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .texto-presentacion {
+        margin-top: 20px;
+    }
+
+    .proyecto {
+        width: 90%;
+    }
+}
